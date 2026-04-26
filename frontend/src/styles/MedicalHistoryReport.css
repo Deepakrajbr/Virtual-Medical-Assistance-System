@@ -1,0 +1,79 @@
+.mr-root {
+    max-width: 1100px;
+    margin: 18px auto;
+    padding: 18px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #0f172a;
+  }
+  
+  .mr-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    margin-bottom:14px;
+  }
+  
+  .mr-header h1 {
+    margin:0;
+    font-size:1.6rem;
+  }
+  
+  .muted { color: #6b7280; }
+  .muted-small { color:#9ca3af; font-size:0.9rem; }
+  
+  .mr-export {
+    background: #2563eb;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    border:none;
+    cursor:pointer;
+  }
+  
+  /* grid: left cards + right charts */
+  .mr-grid {
+    display:grid;
+    grid-template-columns: 360px 1fr;
+    gap:18px;
+    align-items:start;
+  }
+  
+  /* cards column */
+  .mr-cards { display:flex; flex-direction:column; gap:12px; }
+  .mr-card {
+    background:white;
+    padding:14px;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(2,6,23,0.06);
+  }
+  .simple-list { list-style:none; padding:0; margin:8px 0 0; display:flex; flex-direction:column; gap:8px;}
+  .simple-list li { font-size:0.95rem; }
+  
+  /* charts column */
+  .mr-charts { display:flex; flex-direction:column; gap:12px; }
+  .chart-card {
+    background:white;
+    padding:14px;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(2,6,23,0.06);
+  }
+  
+  /* lists section */
+  .mr-lists { display:grid; grid-template-columns: 1fr 420px; gap:14px; margin-top:18px; }
+  .list-col { background:white; padding:14px; border-radius:10px; box-shadow:0 6px 18px rgba(2,6,23,0.06); }
+  
+  .mr-table { width:100%; border-collapse:collapse; font-size:0.95rem;}
+  .mr-table th, .mr-table td { text-align:left; padding:8px 6px; border-bottom:1px solid #eef2f7; }
+  .mr-table thead th { color:#334155; font-weight:600; font-size:0.95rem; }
+  
+  /* prescriptions list */
+  .prescription-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px; }
+  .prescription-list li { font-size:0.95rem; }
+  
+  /* small screens */
+  @media (max-width: 900px) {
+    .mr-grid { grid-template-columns: 1fr; }
+    .mr-lists { grid-template-columns: 1fr; }
+  }
+  

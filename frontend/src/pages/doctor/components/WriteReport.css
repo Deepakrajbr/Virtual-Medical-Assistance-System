@@ -1,0 +1,80 @@
+/* PAPER STYLE */
+.prescription {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #fff;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* HEADER */
+  .pres-header {
+    text-align: center;
+    border-bottom: 2px dashed #2563eb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .pres-header h2 {
+    margin: 0;
+    color: #1e3a8a;
+  }
+  
+  /* ROW */
+  .pres-row {
+    margin-bottom: 15px;
+  }
+  
+  /* SECTIONS */
+  .pres-section {
+    margin-bottom: 18px;
+  }
+  
+  .pres-section h4 {
+    margin-bottom: 6px;
+    color: #1e3a8a;
+  }
+  
+  /* TEXTAREA (HANDWRITTEN STYLE FEEL) */
+  .pres-section textarea {
+    width: 100%;
+    min-height: 80px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+  }
+  
+  /* SELECT */
+  .report-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* BUTTON */
+  .pres-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .pres-btn:hover {
+    background: #1d4ed8;
+  }
+  .patient-display {
+    margin: 10px 0 20px;
+    padding: 10px;
+    background: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #1e3a8a;
+  }

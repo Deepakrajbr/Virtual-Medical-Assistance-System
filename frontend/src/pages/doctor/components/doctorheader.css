@@ -1,0 +1,104 @@
+/* HEADER */
+.doc-header {
+  display: flex;
+  justify-content: flex-end; /* everything right */
+  align-items: center;
+
+  padding: 25px 40px; /* 🔥 wider spacing */
+  background: #0f172a;
+  color: white;
+}
+
+/* PROFILE AREA */
+.doc-profile {
+  display: flex;
+  align-items: center;
+  gap: 18px; /* more spacing */
+  position: relative;
+}
+
+/* BLOG LINK */
+.blog-link {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #e2e8f0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.25s ease;
+}
+
+.blog-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #38bdf8;
+}
+
+/* AVATAR */
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #10b981, #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+/* NAME */
+.doc-name {
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 10px;
+  width: 160px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* BUTTONS */
+.dropdown button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.dropdown button:hover {
+  background: #f1f5f9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .doc-header {
+    padding: 12px 20px;
+  }
+
+  .doc-name {
+    display: none;
+  }
+}

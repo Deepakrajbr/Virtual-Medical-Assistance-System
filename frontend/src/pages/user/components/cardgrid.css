@@ -1,0 +1,61 @@
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+  
+    /* soft shadow */
+    box-shadow: 0 4px 12px rgba(192, 60, 60, 0.08);
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  }
+  
+  /* Title */
+  .card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+  }
+  
+  /* Subtitle */
+  .card p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Optional: different color accents */
+  .card:nth-child(1) {
+    border-left: 4px solid #3b82f6; /* blue */
+  }
+  .card:nth-child(2) {
+    border-left: 4px solid #10b981; /* green */
+  }
+  .card:nth-child(3) {
+    border-left: 4px solid #f59e0b; /* yellow */
+  }
+  .card:nth-child(4) {
+    border-left: 4px solid #8b5cf6; /* purple */
+  }
+  .card:nth-child(5) {
+    border-left: 4px solid #ef4444; /* red */
+  }
+  .card:nth-child(6) {
+    border-left: 4px solid #14b8a6; /* teal */
+  }
+  .card:nth-child(7) {
+    border-left: 4px solid #6366f1; /* indigo */
+  }

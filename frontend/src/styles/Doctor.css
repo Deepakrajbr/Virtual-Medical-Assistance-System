@@ -1,0 +1,94 @@
+/* CONTAINER */
+.doctor-container {
+  width: 100%;
+  max-width: 1300px; /* wider for 4 cards */
+  margin: 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* TITLE */
+.doctor-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+/* GRID (FORCE 4 CARDS) */
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ✅ 4 per row */
+  gap: 22px;
+}
+
+/* CARD */
+.doctor-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HOVER EFFECT */
+.doctor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* DOCTOR NAME */
+.doctor-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+/* SPECIALIZATION */
+.doctor-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.doctor-card button {
+  margin-top: auto;
+  padding: 10px;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.doctor-card button:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .doctor-grid {
+    grid-template-columns: repeat(2, 1fr); /* tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .doctor-grid {
+    grid-template-columns: 1fr; /* mobile */
+  }
+
+  .doctor-title {
+    font-size: 1.6rem;
+  }
+}

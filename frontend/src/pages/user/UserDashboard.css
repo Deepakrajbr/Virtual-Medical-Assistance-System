@@ -1,0 +1,189 @@
+/* ===== LAYOUT ===== */
+.ud-layout {
+  display: flex;
+  height: 100vh;
+  background: #050405;
+  color: white;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 240px;
+  background: #020617;
+  padding: 20px;
+}
+
+.logo {
+  color: #38bdf8;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.sidebar li.active,
+.sidebar li:hover {
+  background: #1e293b;
+}
+
+/* ===== MAIN ===== */
+.ud-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 25px;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+/* SEARCH */
+.topbar input {
+  background: #0f172a;
+  border: 1px solid #334155;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+}
+
+.topbar input::placeholder {
+  color: #94a3b8;
+}
+
+/* PROFILE */
+.profile {
+  position: relative;
+}
+
+/* AVATAR */
+.avatar {
+  width: 36px;
+  height: 36px;
+  background: #38bdf8;
+  color: black;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.avatar:hover {
+  background: #0ea5e9;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+
+  background: #020617;
+  color: white;
+
+  border: 1px solid #334155;
+  padding: 10px;
+  border-radius: 8px;
+  width: 140px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+/* USER NAME */
+.dropdown p {
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #334155;
+  font-size: 14px;
+}
+
+/* LOGOUT BUTTON */
+.dropdown button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #ef4444;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown button:hover {
+  background: #dc2626;
+}
+
+/* ===== CONTENT ===== */
+.ud-content {
+  padding: 25px;
+}
+
+/* ===== WELCOME ===== */
+.welcome h1 {
+  margin-bottom: 5px;
+}
+
+.welcome p {
+  color: #94a3b8;
+}
+
+/* ===== INFO BANNER ===== */
+.info-banner {
+  background: #e2e8f0;
+  color: black;
+  padding: 12px;
+  margin: 20px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+
+.card:hover {
+  background: #f4f5f6;
+  transform: translateY(-5px);
+} */

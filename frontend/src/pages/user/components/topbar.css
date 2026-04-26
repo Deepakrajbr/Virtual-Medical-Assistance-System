@@ -1,0 +1,135 @@
+/* ===== TOPBAR ===== */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 12px 20px;
+    background: #110c0c;
+  
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  /* ===== SEARCH ===== */
+  .topbar input {
+    width: 250px;
+    padding: 8px 12px;
+  
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .topbar input:focus {
+    border-color: #10b981;
+  }
+  
+  /* ===== PROFILE ===== */
+  .profile {
+    position: relative;   /* 🔥 IMPORTANT */
+  }
+  
+  /* ===== AVATAR ===== */
+  .avatar {
+    width: 36px;
+    height: 36px;
+  
+    background: #10b981;
+    color: white;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+    font-weight: bold;
+  
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .avatar:hover {
+    background: #059669;
+  }
+  
+  /* ===== DROPDOWN ===== */
+  .dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+  
+    width: 160px;
+    background: white;
+  
+    border-radius: 10px;
+    padding: 10px;
+  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+  
+    z-index: 9999;
+  
+    /* animation */
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: dropdownFade 0.2s ease forwards;
+  }
+  
+  /* ===== ANIMATION ===== */
+  @keyframes dropdownFade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ===== USER NAME ===== */
+  .dropdown p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* ===== BUTTON ===== */
+  .dropdown button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+  
+    border: none;
+    border-radius: 6px;
+  
+    background: #ef4444;
+    color: white;
+  
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .dropdown button:hover {
+    background: #dc2626;
+  }
+  .blog-link {
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: 0.25s ease;
+    margin-right: 100px;
+  }
+  .blog-link {
+    margin-left: auto;   /* 🔥 pushes it to right side */
+    margin-right: 12px;  /* space before avatar */
+  }
+  
+  /* make profile inline */
+  .profile {
+    display: inline-flex;
+    align-items: center;
+  }

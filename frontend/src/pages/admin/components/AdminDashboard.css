@@ -1,0 +1,52 @@
+/* MINI CARD */
+.mini-stats {
+    margin: 15px 0;
+  }
+  
+  .mini-card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+  }
+  
+  .mini-card h4 {
+    font-size: 13px;
+    color: #94a3b8;
+  }
+  
+  .mini-card p {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* BADGES */
+  .badge-new {
+    background: #22c55e;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+  }
+  
+  .badge-old {
+    background: #64748b;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+  }
+  
+  /* EXPORT BUTTON */
+  .export-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .export-btn:hover {
+    background: #4f46e5;
+  }

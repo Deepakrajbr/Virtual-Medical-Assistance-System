@@ -1,0 +1,21 @@
+.upload-container {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .upload-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .upload-container input {
+    margin-bottom: 15px;
+  }
+  
+  .upload-container button {
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
