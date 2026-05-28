@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../styles/register.css";
+import "../styles/Register.css";
 import HomeButton from "./HomeButton.jsx";
 
 export default function Register() {
